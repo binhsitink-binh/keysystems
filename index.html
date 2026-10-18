@@ -1,1 +1,41 @@
-
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050906">
+  <meta name="description" content="KOAX Script Key System — quản lý và nhận license key."><title>KOAX Key System — by binhsitink</title>
+  <link rel="icon" type="image/webp" href="assets/images/koax-logo.webp"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body><div class="ambient" aria-hidden="true"></div>
+<header class="topbar"><a class="brand" href="index.html" aria-label="KOAX Script — trang chủ"><img src="assets/images/koax-logo.webp" alt="KOAX logo"><span><span class="brand-name">KOAX <span style="color:#5be18c">Script</span></span><span class="brand-sub">by binhsitink · key system</span></span></a><div class="top-actions"><span class="pill status-pill"><span class="dot"></span><span id="system-pill">Đang kết nối</span></span></div></header>
+<main class="wrap">
+  <section class="hero hero-enhanced">
+    <div class="hero-copy">
+      <span class="eyebrow"><span class="icon">[K]</span> KEY SYSTEM <span class="eyebrow-divider">/</span> FREE ACCESS</span>
+      <h1>Unlock your <span class="gradient-text">KOAX access.</span></h1>
+      <p>Hoàn thành hai bước với cùng một nhà cung cấp để nhận license 24 giờ hoặc gia hạn key đang hoạt động. Theo dõi tiến độ và quản lý key ngay tại một nơi.</p>
+      <div class="hero-tags"><span><i></i> Quy trình 2 bước</span><span><i></i> License 24 giờ</span><span><i></i> Đồng bộ trạng thái</span></div>
+    </div>
+    <aside class="hero-visual" aria-label="Tổng quan quy trình KOAX">
+      <div class="visual-top"><span class="visual-mark">K<span>·</span></span><span class="visual-state"><i></i> ACCESS WORKFLOW</span></div>
+      <div class="visual-main"><span class="visual-caption">YOUR NEXT STEP</span><strong>Get Key<span>.</span></strong><p>Complete the tasks.<br>Continue your access.</p></div>
+      <div class="visual-bottom"><div><span>STEPS</span><strong>02</strong></div><div><span>LICENSE</span><strong>24H</strong></div><div><span>PLATFORM</span><strong>KOAX</strong></div></div>
+      <span class="visual-orbit orbit-one" aria-hidden="true"></span><span class="visual-orbit orbit-two" aria-hidden="true"></span>
+    </aside>
+  </section>
+  <div id="api-warning" class="notice error hidden" role="alert"></div>
+  <section id="maintenance-panel" class="maintenance-panel hidden"><div style="font-size:26px">⌁</div><h2>Get Key đang bảo trì</h2><p>Get key hiện đang bảo trì vui lòng thử lại sau.</p></section>
+  <section id="task-card" class="card card-pad task-card">
+    <div><div class="tag-row"><span class="tag green">⬟ HWID Locked</span><span class="tag">◷ 24 Hours / 2 Tasks</span></div><h2>KOAX Free Access</h2><p id="task-description">Chọn nhà cung cấp bên dưới. Hoàn thành hai phiên nhiệm vụ với cùng một nhà cung cấp để mở khóa hoặc gia hạn key trong 24 giờ.</p><div id="provider-list" class="provider-list" aria-label="Chọn nhà cung cấp"><span class="muted">Đang tải nhà cung cấp…</span></div></div>
+    <div><div class="progress-label"><span>Task Progress</span><strong id="progress-count">0/2</strong></div><div class="progress" role="progressbar" aria-label="Tiến độ nhiệm vụ" aria-valuemin="0" aria-valuemax="2" aria-valuenow="0"><span id="progress-fill"></span></div><p id="flow-status" class="muted" style="font-size:10px;line-height:1.6;margin:10px 0 0">Chưa bắt đầu</p></div>
+    <div class="task-action"><button id="start-task" class="btn btn-primary" type="button">⚡ Start Task</button></div>
+  </section>
+  <section class="card card-pad" style="margin-top:24px">
+    <div class="section-head"><div class="section-title"><span class="title-icon">◉</span><span>Your License Keys</span><span class="count">Slot <strong id="slot-count">0/6</strong></span></div><button id="refresh-keys" class="btn btn-ghost btn-small" type="button">↻ Làm mới</button></div>
+    <div id="key-info" class="notice info hidden" style="margin-top:16px"></div>
+    <div class="table-wrap"><table><thead><tr><th>Key Value</th><th>Time Left</th><th>Status</th><th>Actions</th></tr></thead><tbody id="key-list"><tr><td colspan="4" class="empty"><strong>Chưa có key</strong><span>Hoàn thành hai nhiệm vụ với cùng một nhà cung cấp để nhận key 24 giờ.</span></td></tr></tbody></table></div>
+  </section>
+  <p class="workflow-note"><span class="note-icon" aria-hidden="true">ⓘ</span><span>Tiến độ được ghi nhận theo phiên nhiệm vụ và điều kiện của từng nhà cung cấp. Nếu trạng thái chưa cập nhật, hãy làm mới trang hoặc liên hệ hỗ trợ.</span></p>
+</main>
+<footer class="footer">KOAX SCRIPT · BY BINHSITINK · SECURE ACCESS WORKFLOW</footer><div id="toast-host" class="toast-host" aria-live="polite"></div>
+<script src="assets/js/config.js"></script><script src="assets/js/api.js"></script><script src="assets/js/common.js"></script><script src="assets/js/main.js"></script>
+</body></html>
