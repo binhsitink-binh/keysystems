@@ -2,7 +2,7 @@
   "use strict";
   const cfg = window.KOAX_CONFIG || {};
   const base = String(cfg.API_BASE || "").trim().replace(/\/$/, "");
-  const PLACEHOLDER = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+  const PLACEHOLDER = "https://script.google.com/macros/s/AKfycbxQqJIOMfQY566nv24OSYS-ymFxz0r1rCk_gH7FGGPkqs6HcoOuK9r1IpZ9iCPjcuL1/exec";
   let frame = null, bridgeOrigin = "", readyResolve = null, readyReject = null, readyPromise = null, handshakeTimer = null;
   const pending = new Map();
   const timeoutError = message => { const e = new Error(message); e.code = "NETWORK_TIMEOUT"; return e; };
